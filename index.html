@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo Application</title>
+
+  <!-- Bootstrap -->
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  />
+
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/5f59ca6ad3.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="todos-bg-container">
+    <div class="container">
+      <h1 class="todos-heading">Todos</h1>
+
+      <h1 class="create-task-heading">
+        Create <span class="create-task-heading-subpart">Task</span>
+      </h1>
+
+      <input
+        type="text"
+        id="todoUserInput"
+        class="todo-user-input"
+        placeholder="What needs to be done?"
+      />
+
+      <button class="button" id="addTodoButton">Add</button>
+
+      <h1 class="todo-items-heading">
+        My <span class="todo-items-heading-subpart">Tasks</span>
+      </h1>
+
+      <ul id="todoItemsContainer" class="todo-items-container"></ul>
+
+      <button class="button" id="saveTodoButton">Save</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
